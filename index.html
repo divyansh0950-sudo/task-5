@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WeatherNow | Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <main class="weather-app">
+
+        <header class="top-bar">
+
+            <div class="brand">
+                <div class="brand-icon">☁️</div>
+
+                <div>
+                    <h1>WeatherNow</h1>
+                    <p>Live Weather Dashboard</p>
+                </div>
+            </div>
+
+            <div class="status">
+                <span></span>
+                Live Data
+            </div>
+
+        </header>
+
+
+        <section class="search-section">
+
+            <div class="search-wrapper">
+
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Search any city in the world..."
+                    autocomplete="off"
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+            <button id="locationBtn" class="location-btn">
+                📍 Use My Location
+            </button>
+
+        </section>
+
+
+        <div id="message"></div>
+
+
+        <section class="weather-dashboard">
+
+            <div class="main-weather-card">
+
+                <div class="location-header">
+
+                    <div>
+                        <p class="location-label">CURRENT WEATHER</p>
+
+                        <h2 id="cityName">
+                            Delhi
+                        </h2>
+
+                        <p id="countryName">
+                            India
+                        </p>
+                    </div>
+
+                    <div class="local-time">
+                        <span>LOCAL TIME</span>
+                        <strong id="localTime">--:--</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="main-weather">
+
+                    <div class="weather-visual">
+                        <div id="weatherIcon">
+                            ☀️
+                        </div>
+                    </div>
+
+                    <div class="temperature-area">
+
+                        <div class="temperature">
+                            <span id="temperature">--</span>
+                            <sup>°C</sup>
+                        </div>
+
+                        <h3 id="condition">
+                            Loading...
+                        </h3>
+
+                        <p>
+                            Feels like
+                            <strong id="feelsLike">--°C</strong>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="details-section">
+
+                <div class="details-header">
+                    <h2>Weather Details</h2>
+                    <p>Current atmospheric conditions</p>
+                </div>
+
+
+                <div class="details-grid">
+
+                    <div class="detail-card">
+
+                        <div class="detail-icon humidity-icon">
+                            💧
+                        </div>
+
+                        <div>
+                            <p>Humidity</p>
+                            <h3 id="humidity">--%</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail-card">
+
+                        <div class="detail-icon wind-icon">
+                            💨
+                        </div>
+
+                        <div>
+                            <p>Wind Speed</p>
+                            <h3 id="windSpeed">-- km/h</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail-card">
+
+                        <div class="detail-icon cloud-icon">
+                            ☁️
+                        </div>
+
+                        <div>
+                            <p>Cloud Cover</p>
+                            <h3 id="cloudCover">--%</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail-card">
+
+                        <div class="detail-icon rain-icon">
+                            🌧️
+                        </div>
+
+                        <div>
+                            <p>Precipitation</p>
+                            <h3 id="precipitation">-- mm</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            <p>
+                Weather data provided by
+                <strong>Open-Meteo</strong>
+            </p>
+
+            <p>
+                Built with HTML, CSS & JavaScript
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
